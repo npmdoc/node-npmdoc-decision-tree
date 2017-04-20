@@ -1,0 +1,334 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/serendipious/nodejs-decision-tree-id3#readme">decision-tree (v0.3.1)</a>
+</h1>
+<h4>NodeJS implementation of decision tree using ID3 algorithm</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.decision-tree">module decision-tree</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decision-tree.decision-tree">
+            function <span class="apidocSignatureSpan"></span>decision-tree
+            <span class="apidocSignatureSpan">(data, target, features)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decision-tree.decision_tree">
+            function <span class="apidocSignatureSpan">decision-tree.</span>decision_tree
+            <span class="apidocSignatureSpan">(data, target, features)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">decision-tree.</span>NODE_TYPES</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">decision-tree.</span>decision_tree.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.decision-tree.decision_tree">module decision-tree.decision_tree</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decision-tree.decision_tree.decision_tree">
+            function <span class="apidocSignatureSpan">decision-tree.</span>decision_tree
+            <span class="apidocSignatureSpan">(data, target, features)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">decision-tree.decision_tree.</span>NODE_TYPES</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.decision-tree.decision_tree.prototype">module decision-tree.decision_tree.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decision-tree.decision_tree.prototype.evaluate">
+            function <span class="apidocSignatureSpan">decision-tree.decision_tree.prototype.</span>evaluate
+            <span class="apidocSignatureSpan">(samples)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decision-tree.decision_tree.prototype.predict">
+            function <span class="apidocSignatureSpan">decision-tree.decision_tree.prototype.</span>predict
+            <span class="apidocSignatureSpan">(sample)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.decision-tree.decision_tree.prototype.toJSON">
+            function <span class="apidocSignatureSpan">decision-tree.decision_tree.prototype.</span>toJSON
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.decision-tree" id="apidoc.module.decision-tree">module decision-tree</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.decision-tree.decision-tree" id="apidoc.element.decision-tree.decision-tree">
+        function <span class="apidocSignatureSpan"></span>decision-tree
+        <span class="apidocSignatureSpan">(data, target, features)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function DecisionTreeID3(data, target, features) {
+  this.data = data;
+  this.target = target;
+  this.features = features;
+  model = createTree(data, target, features);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decision-tree.decision_tree" id="apidoc.element.decision-tree.decision_tree">
+        function <span class="apidocSignatureSpan">decision-tree.</span>decision_tree
+        <span class="apidocSignatureSpan">(data, target, features)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function DecisionTreeID3(data, target, features) {
+  this.data = data;
+  this.target = target;
+  this.features = features;
+  model = createTree(data, target, features);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.decision-tree.decision_tree" id="apidoc.module.decision-tree.decision_tree">module decision-tree.decision_tree</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.decision-tree.decision_tree.decision_tree" id="apidoc.element.decision-tree.decision_tree.decision_tree">
+        function <span class="apidocSignatureSpan">decision-tree.</span>decision_tree
+        <span class="apidocSignatureSpan">(data, target, features)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function DecisionTreeID3(data, target, features) {
+  this.data = data;
+  this.target = target;
+  this.features = features;
+  model = createTree(data, target, features);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.decision-tree.decision_tree.prototype" id="apidoc.module.decision-tree.decision_tree.prototype">module decision-tree.decision_tree.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.decision-tree.decision_tree.prototype.evaluate" id="apidoc.element.decision-tree.decision_tree.prototype.evaluate">
+        function <span class="apidocSignatureSpan">decision-tree.decision_tree.prototype.</span>evaluate
+        <span class="apidocSignatureSpan">(samples)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">evaluate = function (samples) {
+  var instance = this;
+  var target = this.target;
+
+  var total = 0;
+  var correct = 0;
+
+  _.each(samples, function(s) {
+    total++;
+    var pred = instance.predict(s);
+    var actual = s[target];
+    if (pred == actual) {
+      correct++;
+    }
+  });
+
+  return correct / total;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+		var predicted_class = dt.predict({
+			color: "blue",
+			shape: "hexagon"
+		});
+	
+* Evaluate model on a dataset:
+	
+		var accuracy = dt.<span class="apidocCodeKeywordSpan">evaluate</span>(test_data);
+
+* Export underlying model for visualization or inspection:
+
+		var treeModel = dt.toJSON();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decision-tree.decision_tree.prototype.predict" id="apidoc.element.decision-tree.decision_tree.prototype.predict">
+        function <span class="apidocSignatureSpan">decision-tree.decision_tree.prototype.</span>predict
+        <span class="apidocSignatureSpan">(sample)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">predict = function (sample) {
+  var root = model;
+  while (root.type !== NODE_TYPES.RESULT) {
+    var attr = root.name;
+    var sampleVal = sample[attr];
+    var childNode = _.detect(root.vals, function(node) {
+      return node.name == sampleVal
+    });
+    if (childNode){
+      root = childNode.child;
+    } else {
+      root = root.vals[0].child;
+    }
+  }
+
+  return root.val;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	
+* Create decision tree and train model:
+	
+		var dt = new DecisionTree(training_data, class_name, features);
+	
+* Predict class label for an instance:
+
+		var predicted_class = dt.<span class="apidocCodeKeywordSpan">predict</span>({
+			color: "blue",
+			shape: "hexagon"
+		});
+	
+* Evaluate model on a dataset:
+	
+		var accuracy = dt.evaluate(test_data);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.decision-tree.decision_tree.prototype.toJSON" id="apidoc.element.decision-tree.decision_tree.prototype.toJSON">
+        function <span class="apidocSignatureSpan">decision-tree.decision_tree.prototype.</span>toJSON
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toJSON = function () {
+  return model;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	
+* Evaluate model on a dataset:
+	
+		var accuracy = dt.evaluate(test_data);
+
+* Export underlying model for visualization or inspection:
+
+		var treeModel = dt.<span class="apidocCodeKeywordSpan">toJSON</span>();
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
